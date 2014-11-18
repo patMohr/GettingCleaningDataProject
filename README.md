@@ -1,6 +1,6 @@
-# Human Activity Recognition Using Smartphones
+## Human Activity Recognition Using Smartphones
 
-## This repository contains 3 files:
+### This repository contains 3 files:
 * The current README.MD file.
 * An r script (run_analysis.R) that can be used to clean and rearrange data provided in the original set to produce a tidy data set of summary information.
 * A codebook (CodeBook.md) that describes the different variables in the resulting tidy data set.
