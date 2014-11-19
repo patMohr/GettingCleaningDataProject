@@ -1,9 +1,9 @@
 # Codebook
 #### Section 1: Background
 #### Section 2: Brief description of original data set
-#### Section 3. Structure of the Data
+#### Section 3. Structure of the Original Data
 #### Section 4. Units
-#### Section 5. Processing the Original Data Set to Summarize Measures by Subject and Activity
+#### Section 5. Processing Required to Summarize Measures by Subject and Activity
 #### Section 6. Description of the Resulting Tidy Data Set
 
 —————————————————————————————————————————————————
@@ -37,7 +37,7 @@ For each of these six measures a large number of summary statistics were calcula
 
 When the number of activities, two sets of 3 dimensional measures and the large number of summary statistics is considered, all together there are more than 560 summary measures provided per experiment.
 
-#### Section 3. Structure of the Data
+#### Section 3. Structure of the Original Data
 After unzipping the file, the data set is structured as follows:
 Main data set contains four text files:	 
 1. README.txt : contains a description of the dataset.
@@ -63,7 +63,7 @@ The subdirectory “inertial” contains individual measures of the experiments,
 #### Section 4. Units
 All data in the experiment were normalized and bounded within -1 and +1.
 
-#### Section 5. Processing the Original Data Set to Summarize Measures by Subject and Activity
+#### Section 5. Processing Required to Summarize Measures by Subject and Activity
 An R script titled run_analysis.R is provided to do the following:
 * Combine the HAR test and training datasets of summary statistics into a single data set.
 * Reduce the measures to only include those measures that calculated either a mean or a standard deviation from the experiments.
