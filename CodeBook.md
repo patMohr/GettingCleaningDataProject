@@ -64,7 +64,8 @@ An R script titled run_analysis.R is provided to do the following:
 * Reduce the measures to only include those measures that calculated either a mean or a standard deviation from the experiments.
 * From that resulting data set, calculate the average measure across all subjects for a given activity and the average across all activities for a given subject.
 * Reformat the resulting dataset in to a tidy data set which is “long and thin.”
-* The final tidy data set contains the following fields:
+
+The final tidy data set contains the following fields:
 * SubjectOrActivity: indicates whether the mean is calculated by subject (across all activities) or by activity (across all subjects)
 * subjectActivityName: if subjectOrActivity=”activity” this column will contain the activity name; if subjectOrActivity=”subject” it will contain the subject number.
 * timeOrFourier: the original data set provides two styles of data “time variant” (denoted by “t” in this field) and Fast Fourier Transformed (denoted by “f”)
