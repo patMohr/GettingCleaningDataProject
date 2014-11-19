@@ -5,14 +5,19 @@
 #### Section 4. Units
 #### Section 5. Tidy Data Set from the Original Data Set
 
-—————————————————————————————
+———————————————————————————————————————————————————————
 
 #### Section 1. Background
 This document lays out the basic structure of the “Human Activity Recognition Using Smartphones” data set with a view to describing the details required to interpret the results of a “tidy” data set that summarizes measurements by subject and activity.  
+
 Interested readers who want to understand full details of the dataset are encouraged to read the documentation provided with the dataset from the UCI Machine Learning website. 
 https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
 Specifically, the README.TXT file and the features_info.txt file provide details on the original data set.
-This particular repository should be considered an offset off the original data set where our goal is to summarize the average measurement by subject (across all activities) and by activity (across all subjects).  The result of that analysis is a tidy dataset with the most granularity possible based on the original experimental design.  
+
+This particular repository should be considered an offset off the original data set where our goal is to summarize the average measurement by subject (across all activities) and by activity (across all subjects).  
+
+The result of that analysis is a tidy dataset with the most granularity possible based on the original experimental design(details in section 5).  
 
 #### Section 2. Brief description of original data set
 Human Activity Recognition Using Smartphones Data Set can be downloaded from https://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI HAR Dataset.zip
@@ -53,7 +58,6 @@ The “test” subdirectory contains 3 files and a subdirectory for the “test�
 3. y_test.txt contains a vector of the activity being measured in each row of X_test.  This is a vector with  length 2947.  Note that activities are provided as a number and the mapping to more descriptive activities can be found by using the activity_lables.txt in the main directory.
 
 The subdirectory “inertial” contains individual measures of the experiments, prior to the calculation of summary statistics provided in the X_test.txt file.
-Under the main directory, the train directory has an identical structure to the test directory.
 
 #### Section 4. Units
 All data in the experiment were normalized and bounded within -1 and +1.
