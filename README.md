@@ -9,5 +9,5 @@ Interested readers are encouraged to first download and unzip the original data 
 
 Once this is complete, use the run_analysis.R script to process the raw data and convert it to a tidy data set.
 
-For details on the resulting file please consult the CodeBook.md file.
+For details on the contents of the resulting file please consult the CodeBook.md file.
 
