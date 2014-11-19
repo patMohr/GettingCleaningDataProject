@@ -1,6 +1,6 @@
 # Codebook
 #### Section 1: Background
-#### Section 2: Brief description of original data set
+#### Section 2: Brief Description of Original Data Set
 #### Section 3. Structure of the Original Data
 #### Section 4. Units
 #### Section 5. Processing Required to Summarize Measures by Subject and Activity
@@ -20,7 +20,7 @@ This particular repository should be considered an offset off the original data 
 
 The result of that analysis is a tidy dataset with the most granularity possible based on the original experimental design (please see details in section 5).  
 
-#### Section 2. Brief description of original data set
+#### Section 2: Brief Description of Original Data Set
 Human Activity Recognition Using Smartphones Data Set can be downloaded from https://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI HAR Dataset.zip
 
 The data represents the results of experiments to measure body motion via smartphones.  The experiments were carried out on 30 subjects performing 6 activities:
