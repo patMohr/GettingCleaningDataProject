@@ -76,8 +76,8 @@ The final tidy data set contains the following fields:
 * SubjectOrActivity: indicates whether the mean is calculated by subject (across all activities) or by activity (across all subjects)
 * subjectActivityName: if subjectOrActivity=”activity” this column will contain the activity name; if subjectOrActivity=”subject” it will contain the subject number.  For subjects, the value of this field will be a number ranging from 1 to 30.  For activities this field will be populated with one of the following:
 	+ Walking
-	+ Walking Upstairs
-	+ Walking Downstairs
+	+ Walking_Upstairs
+	+ Walking_Downstairs
 	+ Sitting
 	+ Standing
 	+ Laying
