@@ -75,12 +75,12 @@ An R script titled run_analysis.R is provided to do the following:
 The final tidy data set contains the following fields:
 * SubjectOrActivity: indicates whether the mean is calculated by subject (across all activities) or by activity (across all subjects)
 * subjectActivityName: if subjectOrActivity=”activity” this column will contain the activity name; if subjectOrActivity=”subject” it will contain the subject number.  For subjects, the value of this field will be a number ranging from 1 to 30.  For activities this field will be populated with one of the following:
-+ Walking
-+ Walking Upstairs
-+ Walking Downstairs
-+ Sitting
-+ Standing
-+ Laying
+	+ Walking
+	+ Walking Upstairs
+	+ Walking Downstairs
+	+ Sitting
+	+ Standing
+	+ Laying
 * timeOrFourier: the original data set provides two styles of data “time variant” (denoted by “t” in this field) and Fast Fourier Transformed (denoted by “f”)
 * bodyOrGravity: indicates whether the measurement is of body (denoted by “body”) or gravity (denoted by “gravity”)
 * accOrGyro: indicates whether the measurement was taken from the smartphone gyroscope (denoted by “gyroscope”) or accelerometer (denoted by “accelerometer”)
