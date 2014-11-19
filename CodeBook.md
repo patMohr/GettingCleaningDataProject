@@ -3,7 +3,8 @@
 #### Section 2: Brief description of original data set
 #### Section 3. Structure of the Data
 #### Section 4. Units
-#### Section 5. Tidy Data Set from the Original Data Set
+#### Section 5. Processing the Original Data Set to Summarize Measures by Subject and Activity
+#### Section 6. Description of the Resulting Tidy Data Set
 
 —————————————————————————————————————————————————
 
@@ -62,13 +63,15 @@ The subdirectory “inertial” contains individual measures of the experiments,
 #### Section 4. Units
 All data in the experiment were normalized and bounded within -1 and +1.
 
-#### Section 5. Tidy Data Set from the Original Data Set
+#### Section 5. Processing the Original Data Set to Summarize Measures by Subject and Activity
 An R script titled run_analysis.R is provided to do the following:
 * Combine the HAR test and training datasets of summary statistics into a single data set.
 * Reduce the measures to only include those measures that calculated either a mean or a standard deviation from the experiments.
 * From that resulting data set, calculate the average measure across all subjects for a given activity and the average across all activities for a given subject.
 * Reformat the resulting dataset in to a tidy data set which is “narrow and thin.”
+* This file is included in this repository under the name “tidyAvgBySubjectByActivity.txt”
 
+#### Section 6. Description of the Resulting Tidy Data Set
 The final tidy data set contains the following fields:
 * SubjectOrActivity: indicates whether the mean is calculated by subject (across all activities) or by activity (across all subjects)
 * subjectActivityName: if subjectOrActivity=”activity” this column will contain the activity name; if subjectOrActivity=”subject” it will contain the subject number.
