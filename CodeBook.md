@@ -72,7 +72,7 @@ An R script titled run_analysis.R is provided to do the following:
 * This file is included in this repository under the name “tidyAvgBySubjectByActivity.txt”
 
 #### Section 6. Description of the Resulting Tidy Data Set
-In constructing the tidy data set, rules laid out by Hadley Wickham in his article “Tidy Data” were strictly enforced.
+In constructing the tidy data set, rules laid out by Hadley Wickham in his article “Tidy Data” were strictly enforced.  http://www.jstatsoft.org/v59/i10/paper.
 
 In particular, in section 3.2 of Wickham’s article he highlights that no more than one variable should be contained in a single column.  The measurement names, as they come structured in the original data set, actually contain many variables: body vs gravity measure, mean vs std dev, X/Y/Z axis, etc.  We take the view that each of these categories is a separate variable and strive to provide as much granularity as possible in the final tidy data set.
 
