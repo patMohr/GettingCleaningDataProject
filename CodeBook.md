@@ -5,7 +5,7 @@
 #### Section 4. Units
 #### Section 5. Tidy Data Set from the Original Data Set
 
-———————————————————————————————————————————————————————
+—————————————————————————————————————————————————
 
 #### Section 1. Background
 This document lays out the basic structure of the “Human Activity Recognition Using Smartphones” data set with a view to describing the details required to interpret the results of a “tidy” data set that summarizes measurements by subject and activity.  
@@ -17,7 +17,7 @@ Specifically, the README.TXT file and the features_info.txt file provide details
 
 This particular repository should be considered an offset off the original data set where our goal is to summarize the average measurement by subject (across all activities) and by activity (across all subjects).  
 
-The result of that analysis is a tidy dataset with the most granularity possible based on the original experimental design(details in section 5).  
+The result of that analysis is a tidy dataset with the most granularity possible based on the original experimental design (please see details in section 5).  
 
 #### Section 2. Brief description of original data set
 Human Activity Recognition Using Smartphones Data Set can be downloaded from https://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI HAR Dataset.zip
@@ -67,7 +67,7 @@ An R script titled run_analysis.R is provided to do the following:
 * Combine the HAR test and training datasets of summary statistics into a single data set.
 * Reduce the measures to only include those measures that calculated either a mean or a standard deviation from the experiments.
 * From that resulting data set, calculate the average measure across all subjects for a given activity and the average across all activities for a given subject.
-* Reformat the resulting dataset in to a tidy data set which is “long and thin.”
+* Reformat the resulting dataset in to a tidy data set which is “narrow and thin.”
 
 The final tidy data set contains the following fields:
 * SubjectOrActivity: indicates whether the mean is calculated by subject (across all activities) or by activity (across all subjects)
