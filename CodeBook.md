@@ -65,7 +65,7 @@ The subdirectory “inertial” contains individual measures of the experiments,
 #### Section 4. Units
 All data in the experiment were normalized and bounded within -1 and +1.
 
-#### Section 5. Processing Required to Summarize Measures by Subject and Activity
+#### Section 5. Transformations Required to Summarize Measures by Subject and Activity
 An R script titled run_analysis.R is provided to do the following:
 * Combine the HAR test and training datasets of summary statistics into a single data set.
 * Reduce the measures to only include those measures that calculated either a mean or a standard deviation from the experiments.
