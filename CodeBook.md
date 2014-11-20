@@ -24,16 +24,17 @@ The result of that analysis is a tidy dataset with the most granularity possible
 Human Activity Recognition Using Smartphones Data Set can be downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 The data represents the results of experiments to measure body motion via smartphones.  The experiments were carried out on 30 subjects performing 6 activities:
-* Walking
-* Walking Upstairs
-* Walking Downstairs
-* Sitting
-* Standing
-* Laying
+1. Walking
+2. Walking Upstairs
+3. Walking Downstairs
+4. Sitting
+5. Standing
+6. Laying
 
 For each activity, accelerometer and gyroscope readings for three dimensional movement were recorded.  
 
-This resulted in a total of six simultaneous measurements: * X-axis acceleration * Y-axis acceleration * Z-axis acceleration * X-axis angular velocity * Y-axis angular velocity * Z-axis angular velocity
+This resulted in a total of six simultaneous measurements:
+1. X-axis acceleration 2. Y-axis acceleration 3. Z-axis acceleration 4. X-axis angular velocity 5. Y-axis angular velocity 6. Z-axis angular velocity
 
 For each of these six measures a large number of summary statistics were calculated, details of which can be found in the features_info.txt file provided with the original data set.
 
