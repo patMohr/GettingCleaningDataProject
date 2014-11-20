@@ -42,8 +42,8 @@ When the number of activities, two sets of 3 dimensional measures and the large 
 #### Section 3. Structure of the Original Data
 After unzipping the file, the data set is structured as follows:
 
-Main data set contains four text files:	
- 1. readme.txt : contains a description of the dataset.
+Main data set contains four text files:
+ 1. README.txt : contains a description of the dataset.
 
 2. activity_labels.txt : contains descriptive labels of the six activities and the associated number which is used in the other datasets.
 
