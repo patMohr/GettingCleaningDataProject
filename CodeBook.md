@@ -87,6 +87,7 @@ The final tidy data set contains the following fields:
 	+ Sitting
 	+ Standing
 	+ Laying
+* measurementType: full name of the measurement type, resembling the way it was presented in the original data set.
 * timeOrFourier: the original data set provides two styles of data “time variant” (denoted by “t” in this field) and Fast Fourier Transformed (denoted by “f”)
 * bodyOrGravity: indicates whether the measurement is of body (denoted by “body”) or gravity (denoted by “gravity”)
 * accOrGyro: indicates whether the measurement was taken from the smartphone gyroscope (denoted by “gyroscope”) or accelerometer (denoted by “accelerometer”)
