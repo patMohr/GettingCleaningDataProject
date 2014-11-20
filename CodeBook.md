@@ -40,10 +40,10 @@ For each of these six measures a large number of summary statistics were calcula
 When the number of activities, two sets of 3 dimensional measures and the large number of summary statistics is considered, all together there are more than 560 summary measures provided for experiments conducted.
 
 #### Section 3. Structure of the Original Data
-After unzipping the file, the data set is structured as follows:
+After unzipping the file from the UCI website, the data set has a file structure as explained below.
 
-Main data set contains four text files:
- 1. README.txt : contains a description of the dataset asdfffffffffasdfsadfsafdsfsdafsdfsdfsadfasdf.                               
+The main directory contains four text files:
+ 1. README.txt : contains a description of the dataset.                               
 
 2. activity_labels.txt : contains descriptive labels of the six activities and the associated number which is used in the other datasets.
 
