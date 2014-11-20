@@ -241,4 +241,4 @@ print(paste("The tidy data was saved in this location:",getwd(),"/tidyAvgBySubje
 
 # Assuming that the mainDir variable was entered correctly and tidyDataOutputDir was generated, this data set can be read with the following command:
 setwd(mainDir)
-tidyAvgBySubjectByActivity=read.table("tidyAvgBySubjectByActivity.txt",header=T)
+tidyAvgBySubjectByActivity<-read.table("tidyAvgBySubjectByActivity.txt",header=T)

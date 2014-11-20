@@ -101,5 +101,5 @@ The final tidy data set contains the following fields:
 * magnitude: a logical vector indicating if the measure is of a magnitude or not
 * frequency: a logical vector indicating if the measure is of a frequency or not
 
-
+![HAR Tidy Data](https://github.com/patMohr/GettingCleaningDataProject/blob/master/tidy data image.png)
 
