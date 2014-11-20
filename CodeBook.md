@@ -71,9 +71,10 @@ An R script titled run_analysis.R is provided to do the following:
 * Reduce the measures to only include those measures that calculated either a mean or a standard deviation from the experiments.
 * From that resulting data set, calculate the average measure across all subjects for a given activity and the average across all activities for a given subject.
 * Reformat the resulting dataset in to a tidy data set which is “narrow and thin.”
-* This file is included in this repository under the name “tidyAvgBySubjectByActivity.txt”
+* This file is automatically saved to the main directory of the “UCI HAR Dataset” data set (which contains the README.txt file) under the name “tidyAvgBySubjectByActivity.txt”
 
 #### Section 6. Description of the Resulting Tidy Data Set
+
 In constructing the tidy data set, rules laid out by Hadley Wickham in his article “Tidy Data” were strictly enforced.  http://www.jstatsoft.org/v59/i10/paper.
 
 In particular, in section 3.2 of Wickham’s article he highlights that no more than one variable should be contained in a single column.  The measurement names, as they come structured in the original data set, actually contain many variables: body vs gravity measure, mean vs std dev, X/Y/Z axis, etc.  We take the view that each of these categories is a separate variable and strive to provide as much granularity as possible in the final tidy data set.
