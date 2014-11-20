@@ -42,8 +42,9 @@ When the number of activities, two sets of 3 dimensional measures and the large 
 #### Section 3. Structure of the Original Data
 After unzipping the file from the UCI website, the data set has a file structure as explained below.
 
-The main directory contains four text files:
- 1. README.txt contains a description of the dataset.                               
+The main directory contains four text files.
+
+1. README.txt contains a description of the dataset.                               
 
 2. activity_labels.txt contains descriptive labels of the six activities and the associated number which is used in the other datasets.
 
