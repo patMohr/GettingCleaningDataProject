@@ -3,7 +3,7 @@
 #### Section 2: Brief Description of Original Data Set
 #### Section 3. Structure of the Original Data
 #### Section 4. Units
-#### Section 5. Transformations Required to Summarize Measures by Subject and Activity
+#### Section 5. Processing Required to Summarize Measures by Subject and Activity
 #### Section 6. Description of the Resulting Tidy Data Set
 
 —————————————————————————————————————————————————
@@ -41,8 +41,7 @@ When the number of activities, two sets of 3 dimensional measures and the large 
 
 #### Section 3. Structure of the Original Data
 After unzipping the file, the data set is structured as follows:
-Main data set contains four text files:	
-
+Main data set contains four text files:	 
 1. README.txt : contains a description of the dataset.
 
 2. activity_labels.txt : contains descriptive labels of the six activities and the associated number which is used in the other datasets.
@@ -80,7 +79,7 @@ In constructing the tidy data set, rules laid out by Hadley Wickham in his artic
 In particular, in section 3.2 of Wickham’s article he highlights that no more than one variable should be contained in a single column.  The measurement names, as they come structured in the original data set, actually contain many variables: body vs gravity measure, mean vs std dev, X/Y/Z axis, etc.  We take the view that each of these categories is a separate variable and strive to provide as much granularity as possible in the final tidy data set.
 
 The final tidy data set contains the following fields:
-* SubjectOrActivity: indicates whether the mean is calculated by subject (across all activities) or by activity (across all subjects)
+* SubjectOrActivity: a binary variable that indicates whether the mean is calculated by subject (across all activities) or by activity (across all subjects).
 * subjectActivityName: if subjectOrActivity=”activity” this column will contain the activity name; if subjectOrActivity=”subject” it will contain the subject number.  For subjects, the value of this field will be a number ranging from 1 to 30.  For activities this field will be populated with one of the following:
 	+ Walking
 	+ Walking_Upstairs
@@ -88,15 +87,16 @@ The final tidy data set contains the following fields:
 	+ Sitting
 	+ Standing
 	+ Laying
-* measurementType: full name of the measurement type, resembling the way it was presented in the original data set.
+* measurementType: full name of the measurement type, resembling the way it was presented in the original data set
+* meanValue: the actual mean value calculated by subject for all activities or by activity for all subjects for a given measurement type
 * timeOrFourier: the original data set provides two styles of data “time variant” (denoted by “t” in this field) and Fast Fourier Transformed (denoted by “f”)
 * bodyOrGravity: indicates whether the measurement is of body (denoted by “body”) or gravity (denoted by “gravity”)
 * accOrGyro: indicates whether the measurement was taken from the smartphone gyroscope (denoted by “gyroscope”) or accelerometer (denoted by “accelerometer”)
-* meanOrStd: indicates whether the mean is being calculated on a mean measurement (denoted by “mean”) or a standard deviation measurement (denoted by “stdDev”).
+* meanOrStd: indicates whether the mean is being calculated on a mean measurement (denoted by “mean”) or a standard deviation measurement (denoted by “stdDev”)
 * axis: indicates which axis is being measured (X, Y, Z or NA)
 * jerk: a logical vector indicating if the measure is of a jerk or not
 * magnitude: a logical vector indicating if the measure is of a magnitude or not
 * frequency: a logical vector indicating if the measure is of a frequency or not
-* meanValue: the actual mean value calculated by subject or activity for the experimental data defined by fields 3:10 of the tidy data set
+
 
 

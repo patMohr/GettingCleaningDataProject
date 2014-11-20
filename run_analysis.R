@@ -15,8 +15,11 @@
 #USER INPUT#
 ############
 
-# After unzipping the file, define the main directory (which contains the README.txt file).  This is the only user input required to run this code locally.
-mainDir="//Users//patm12//Documents//coursera//gettingCleaningData//project//UCI HAR Dataset//"
+# After unzipping the file, define the main directory (which contains the README.txt file) as the working directory. A sample is below.
+# setwd("//Users//patm12//documents//coursera//gettingCleaningData//project//UCI HAR dataset//")
+
+# This directory will be assigned to the object "mainDir"
+mainDir<-getwd()
 
 ################
 #Pre-processing#
@@ -30,9 +33,6 @@ library(tidyr)
 # We will be working with data from two subdirectories, test and train.  Predefine those directories now.
 testDir<-paste(mainDir,"//test//",sep="")
 trainDir<-paste(mainDir,"//train//",sep="")
-# Create an output directory for a tidy data file which contains an average of each measurement type by subject (for all activities) and by activity (for all subject).
-tidyDataOutputDir<-paste(mainDir,"//tidyDataOutput//",sep="")
-dir.create(tidyDataOutputDir)
 
 # Common data for both sets are in the mainDir (features.txt and activity_labels.txt).  Load those files now.
 setwd(mainDir)
@@ -220,9 +220,6 @@ tidy$magnitude<-grepl("Magnitude",tidy$measurementType)
 tidy$frequency<-NA
 tidy$frequency<-grepl("Frequency",tidy$measurementType)
 
-# Reorder the columns to put the meanValue on the far right column
-tidy<-cbind(tidy[,-3],meanValue=tidy$meanValue)
-
 # Result is an 12 column data frame as follows:
 # subjectOrActivity subjectActivityName         measurementType meanValue timeOrFourier bodyOrGravity     accOrGyro meanOrStd axis  jerk magnitude frequency
 #           subject                   1 tBodyAccelerometerMeanX 0.2656969             t          body accelerometer      mean    X FALSE     FALSE     FALSE
@@ -232,7 +229,7 @@ tidy<-cbind(tidy[,-3],meanValue=tidy$meanValue)
 # Please see codeBook.md for interpretation of these fields.
 
 # Write the results to the tidy data output directory
-setwd(tidyDataOutputDir)
+setwd(mainDir)
 write.table(tidy,file="tidyAvgBySubjectByActivity.txt",row.names=F)
 
 # Print the location of file is as follows:
@@ -243,6 +240,5 @@ print(paste("The tidy data was saved in this location:",getwd(),"/tidyAvgBySubje
 ##################
 
 # Assuming that the mainDir variable was entered correctly and tidyDataOutputDir was generated, this data set can be read with the following command:
-setwd(tidyDataOutputDir)
+setwd(mainDir)
 tidyAvgBySubjectByActivity=read.table("tidyAvgBySubjectByActivity.txt",header=T)
-
