@@ -37,10 +37,11 @@ This resulted in a total of six simultaneous measurements:X, Y and Z axis accele
 
 For each of these six measures a large number of summary statistics were calculated, details of which can be found in the features_info.txt file provided with the original data set.
 
-When the number of activities, two sets of 3 dimensional measures and the large number of summary statistics is considered, all together there are more than 560 summary measures provided per experiment.
+When the number of activities, two sets of 3 dimensional measures and the large number of summary statistics is considered, all together there are more than 560 summary measures provided for experiments conducted.
 
 #### Section 3. Structure of the Original Data
 After unzipping the file, the data set is structured as follows:
+
 Main data set contains four text files:	 
 1. README.txt : contains a description of the dataset.
 
