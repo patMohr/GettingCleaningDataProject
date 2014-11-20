@@ -64,7 +64,16 @@ The “test” subdirectory contains 3 files and a subdirectory for the “test�
 
 3. y_test.txt contains a vector of the activity being measured in each row of X_test.  This is a vector with  length 2947.  Note that activities are provided as a number and the mapping to more descriptive activities can be found by using the activity_lables.txt in the main directory.
 
-The subdirectory “inertial” contains individual measures of the experiments, prior to the calculation of summary statistics provided in the X_test.txt file.
+The diagram below provides a simple visual image of how these files can be placed together to form a complete data set for the test data and the same logic applies to the train data.
+
+![configuring the data](https://github.com/patMohr/GettingCleaningDataProject/blob/master/imagesForCodeBook/data structure.png)
+
+Note: the diagram above is a derivation of the data structure as suggested by David Hood, TA of the Coursera course “Getting and Cleaning Data”.  https://class.coursera.org/getdata-009/forum/thread?thread_id=58#comment-369
+
+
+The subdirectory “inertial” contains individual measures of the experiments, prior to the calculation of summary statistics provided in the X_test.txt file. Files in the “inertial” subdirectory were not used to produce the summary “tidy” data set of averages by subject and by mean.
+
+
 
 #### Section 4. Units
 All data in the experiment were normalized and bounded within -1 and +1.
