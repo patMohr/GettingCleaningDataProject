@@ -16,7 +16,7 @@ https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartph
 
 Specifically, the README.TXT file and the features_info.txt file provide details on the original data set.
 
-This particular repository should be considered an offset derivation of the original data set where our goal is to summarize the average measurement by subject (across all activities) and by activity (across all subjects).  
+This particular repository should be considered a derivation of the original data set where our goal is to summarize the average measurement by subject (across all activities) and by activity (across all subjects).  
 
 The result of that analysis is a tidy dataset with the most granularity possible based on the original experimental design (please see details in section 5).  
 
@@ -33,7 +33,7 @@ The data represents the results of experiments to measure body motion via smartp
 
 For each activity, accelerometer and gyroscope readings for three dimensional movement were recorded.  
 
-This resulted in a total of six simultaneous measurements: * X axis acceleration * Y axis acceleration * Z axis acceleration * X axis angular velocity * Y axis angular velocity * Z axis angular velocity
+This resulted in a total of six simultaneous measurements: * X-axis acceleration * Y-axis acceleration * Z-axis acceleration * X-axis angular velocity * Y-axis angular velocity * Z-axis angular velocity
 
 For each of these six measures a large number of summary statistics were calculated, details of which can be found in the features_info.txt file provided with the original data set.
 
