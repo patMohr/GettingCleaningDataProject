@@ -34,6 +34,7 @@ The data represents the results of experiments to measure body motion via smartp
 For each activity, accelerometer and gyroscope readings for three dimensional movement were recorded.  
 
 This resulted in a total of six simultaneous measurements:
+
 * X-axis acceleration 
  * Y-axis acceleration  
 * Z-axis acceleration  
