@@ -235,6 +235,9 @@ tidy<-cbind(tidy[,-3],meanValue=tidy$meanValue)
 setwd(tidyDataOutputDir)
 write.table(tidy,file="tidyAvgBySubjectByActivity.txt",row.names=F)
 
+# Print the location of file is as follows:
+print(paste("The tidy data was saved in this location:",getwd(),"/tidyAvgBySubjectByActivity.txt",sep=""))
+
 ##################
 #Reading the data#
 ##################
@@ -243,5 +246,3 @@ write.table(tidy,file="tidyAvgBySubjectByActivity.txt",row.names=F)
 setwd(tidyDataOutputDir)
 tidyAvgBySubjectByActivity=read.table("tidyAvgBySubjectByActivity.txt",header=T)
 
-#location of file is as follows:
-print(getwd())
