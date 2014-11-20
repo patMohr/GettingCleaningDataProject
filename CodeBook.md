@@ -42,6 +42,8 @@ When the number of activities, two sets of 3 dimensional measures and the large 
 #### Section 3. Structure of the Original Data
 After unzipping the file from the UCI website, the data set has a file structure as explained below.
 
+![HAR File Structure](https://github.com/patMohr/GettingCleaningDataProject/blob/master/imagesForCodeBook/file structure.png)
+
 The main directory contains four text files.
 
 1. README.txt contains a description of the dataset.                               
