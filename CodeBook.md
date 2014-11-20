@@ -43,13 +43,13 @@ When the number of activities, two sets of 3 dimensional measures and the large 
 After unzipping the file from the UCI website, the data set has a file structure as explained below.
 
 The main directory contains four text files:
- 1. README.txt : contains a description of the dataset.                               
+ 1. README.txt contains a description of the dataset.                               
 
-2. activity_labels.txt : contains descriptive labels of the six activities and the associated number which is used in the other datasets.
+2. activity_labels.txt contains descriptive labels of the six activities and the associated number which is used in the other datasets.
 
-3. Features_info.txt: provides a detailed explanation of the different measures taken as well as the summary statistics which were collected for each measure.
+3. Features_info.txt provides a detailed explanation of the different measures taken as well as the summary statistics which were collected for each measure.
 
-4. Features.txt: provides a complete list of summary statistics calculated for each experiment.
+4. Features.txt provides a complete list of summary statistics calculated for each experiment.
 
 The results of the experiment are broken in to two subdirectories with an identical structure: “test” and “train.”
 
