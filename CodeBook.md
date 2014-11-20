@@ -85,7 +85,11 @@ In constructing the tidy data set, rules laid out by Hadley Wickham in his artic
 
 In particular, in section 3.2 of Wickham’s article he highlights that no more than one variable should be contained in a single column.  The measurement names, as they come structured in the original data set, actually contain many variables: body vs gravity measure, mean vs std dev, X/Y/Z axis, etc.  We take the view that each of these categories is a separate variable and strive to provide as much granularity as possible in the final tidy data set.
 
-The final tidy data set contains the following fields:
+The resulting tidy data set looks like this:
+
+![HAR tidy data](https://github.com/patMohr/GettingCleaningDataProject/blob/master/imagesForCodeBook/tidy data image.png)
+
+#####Field Descriptions:
 * subjectOrActivity: a binary variable that indicates whether the mean is calculated by subject (across all activities) or by activity (across all subjects).
 * subjectActivityName: if subjectOrActivity=”activity” this column will contain the activity name; if subjectOrActivity=”subject” it will contain the subject number.  For subjects, the value of this field will be a number ranging from 1 to 30.  For activities this field will be populated with one of the following:
 	+ Walking
@@ -105,7 +109,5 @@ The final tidy data set contains the following fields:
 * magnitude: a logical vector indicating if the measure is of a magnitude or not
 * frequency: a logical vector indicating if the measure is of a frequency or not
 
-An example of the top of this data set is provided below:
 
-![HAR tidy data](https://github.com/patMohr/GettingCleaningDataProject/blob/master/imagesForCodeBook/tidy data image.png)
 
