@@ -103,5 +103,5 @@ The final tidy data set contains the following fields:
 
 An example of the top of this data set is provided below:
 
-![HAR tidy data](https://github.com/patMohr/GettingCleaningDataProject/blob/master/tidy data image.png)
+![HAR tidy data](https://github.com/patMohr/GettingCleaningDataProject/blob/master/imagesForCodeBook/tidy data image.png)
 
