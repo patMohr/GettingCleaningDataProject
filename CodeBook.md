@@ -1,10 +1,14 @@
 # Codebook
 #### Section 1: Background
-#### Section 2: Brief Description of Original Data Set
+#### Section 2: Brief Description of Original Experiment
 #### Section 3. Structure of the Original Data
 #### Section 4. Units
-#### Section 5. Processing Required to Summarize Measures by Subject and Activity
+#### Section 5. Transformations Required to Summarize Measures by Subject and Activity
 #### Section 6. Description of the Resulting Tidy Data Set
+#### Section 7. Applications of the tidy data set using dplyr
+#### Section 8. Bibliography
+
+
 
 —————————————————————————————————————————————————
 
@@ -20,7 +24,7 @@ This particular repository should be considered a derivation of the original dat
 
 The result of that analysis is a tidy dataset with the most granularity possible based on the original experimental design (please see details in section 5).  
 
-#### Section 2: Brief Description of Original Data Set
+#### Section 2: Brief Description of Original Experiment
 Human Activity Recognition Using Smartphones Data Set can be downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 The data represents the results of experiments to measure body motion via smartphones.  The experiments were carried out on 30 subjects performing 6 activities:
@@ -83,7 +87,7 @@ An R script titled run_analysis.R is provided to do the following:
 * Combine the HAR test and training datasets of summary statistics into a single data set.
 * Reduce the measures to only include those measures that calculated either a mean or a standard deviation from the experiments.
 * From that resulting data set, calculate the average measure across all subjects for a given activity and the average across all activities for a given subject.
-* Reformat the resulting dataset in to a tidy data set which is “narrow and thin.”
+* Reformat the resulting dataset in to a tidy data set which is “long and thin.”
 * This file is automatically saved to the main directory of the “UCI HAR Dataset” data set (which contains the README.txt file) under the name “tidyAvgBySubjectByActivity.txt”
 
 #### Section 6. Description of the Resulting Tidy Data Set
@@ -119,4 +123,4 @@ The resulting tidy data set looks like this:
 * frequency: a logical vector indicating if the measure is of a frequency or not
 
 
-
+Here’s some code```{r}dim(tidyAvgBySubjectByActivity)```
