@@ -125,7 +125,7 @@ The resulting tidy data set looks like this:
 
 2. Wickham, Hadley. “Tidy Data”, Journal of Statistical Software,Vol. 59, Issue 10, Sep 2014
 
-3. David Hood (Coursera TA), Class Discussion Forum: “David's Project FAQ”
+3. Hood, David (Coursera TA), Class Discussion Forum: “David's Project FAQ”
 
 
 
