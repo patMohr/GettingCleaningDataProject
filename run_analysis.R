@@ -1,23 +1,19 @@
 # This code takes the data from the "Human Activity Recognition Using Smartphones Data Set" from the UCI Machine Learning Repository.  
 # Data is read, processed and tranformed to create a tidy data set that summarizes experiment results across many different variables.
 
-# Overall plan is to complete 5 steps:
+# The plan for the code is to complete 5 steps:
 # 1. Merge the training and the test sets to create one data set.
 # 2. Extract only the measurements on the mean and standard deviation for each measurement.
 # 3. Use descriptive activity names to name the activities in the data set.
 # 4. Appropriately label the data set with descriptive variable names.
 # 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
-# Note: Tidy data principles are laid out in this journal article by Hadley Wickham: http://www.jstatsoft.org/v59/i10/paper
-
-# First retrieve raw data from the following URL, https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip, and unzip the file.
 
 ############
 #USER INPUT#
 ############
-
+# First retrieve raw data from the following URL, https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip, and unzip the file.
 # After unzipping the file, define the main directory (which contains the README.txt file) as the working directory. A sample is below.
-# setwd("//Users//patm12//documents//coursera//gettingCleaningData//project//UCI HAR dataset//")
-
+# setwd("//Users//johnDoe//documents//coursera//gettingCleaningData//project//UCI HAR dataset//")
 # This directory will be assigned to the object "mainDir"
 mainDir<-getwd()
 
