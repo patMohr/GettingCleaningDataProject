@@ -228,12 +228,14 @@ tidy$frequency<-grepl("Frequency",tidy$measurementType)
 
 # Please see codeBook.md for interpretation of these fields.
 
+# Sort the data set
+tidy<-tidy[order(tidy$subjectActivityName),]
 # Write the results to the tidy data output directory
 setwd(mainDir)
-write.table(tidy,file="tidyAvgBySubjectByActivity.txt",row.names=F)
+write.table(tidy,file="tidy.txt",row.names=F)
 
 # Print the location of file is as follows:
-print(paste("The tidy data was saved in this location:",getwd(),"/tidyAvgBySubjectByActivity.txt",sep=""))
+print(paste("The tidy data was saved in this location:",getwd(),"/tidy.txt",sep=""))
 
 ##################
 #Reading the data#
@@ -241,4 +243,4 @@ print(paste("The tidy data was saved in this location:",getwd(),"/tidyAvgBySubje
 
 # Assuming that the mainDir variable was entered correctly and tidyDataOutputDir was generated, this data set can be read with the following command:
 setwd(mainDir)
-tidyAvgBySubjectByActivity<-read.table("tidyAvgBySubjectByActivity.txt",header=T)
+tidy<-read.table("tidy.txt",header=T)

@@ -5,9 +5,7 @@
 #### Section 4. Units
 #### Section 5. Transformations Required to Summarize Measures by Subject and Activity
 #### Section 6. Description of the Resulting Tidy Data Set
-#### Section 7. Applications of the tidy data set using dplyr
-#### Section 8. Bibliography
-
+#### Section 7. Bibliography
 
 
 —————————————————————————————————————————————————
@@ -88,7 +86,7 @@ An R script titled run_analysis.R is provided to do the following:
 * Reduce the measures to only include those measures that calculated either a mean or a standard deviation from the experiments.
 * From that resulting data set, calculate the average measure across all subjects for a given activity and the average across all activities for a given subject.
 * Reformat the resulting dataset in to a tidy data set which is “long and thin.”
-* This file is automatically saved to the main directory of the “UCI HAR Dataset” data set (which contains the README.txt file) under the name “tidyAvgBySubjectByActivity.txt”
+* This file is automatically saved to the main directory of the “UCI HAR Dataset” data set (which contains the README.txt file) under the name “tidy.txt”
 
 #### Section 6. Description of the Resulting Tidy Data Set
 
@@ -122,5 +120,12 @@ The resulting tidy data set looks like this:
 * magnitude: a logical vector indicating if the measure is of a magnitude or not
 * frequency: a logical vector indicating if the measure is of a frequency or not
 
+#### Section 7. References
+1. University of California Irvine Machine Learning Repository.  “Human Activity Recognition Using Smartphones Data Set”  http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-Here’s some code```{r}dim(tidyAvgBySubjectByActivity)```
+2. Wickham, Hadley. “Tidy Data”, Journal of Statistical Software,Vol. 59, Issue 10, Sep 2014
+
+3. David Hood (Coursera TA), Class Discussion Forum: “David's Project FAQ”
+
+
+
